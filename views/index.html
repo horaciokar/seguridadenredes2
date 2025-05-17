@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Gestión de Estudiantes</h1>
+  </header>
+  
+  <main>
+    <section class="formulario">
+      <h2>Agregar Nuevo Estudiante</h2>
+      <form id="formularioEstudiante">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="campo">
+          <label for="carrera">Carrera:</label>
+          <input type="text" id="carrera" name="carrera" required>
+        </div>
+        
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+    
+    <section class="listado">
+      <h2>Listado de Estudiantes</h2>
+      <div class="loader" id="loader">Cargando...</div>
+      <table id="tablaEstudiantes">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Carrera</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se cargarán los estudiantes dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Demo de Node.js con Aurora RDS - Ejemplo de Clase</p>
+  </footer>
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>
