@@ -16,10 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Configuración de conexión a Aurora RDS
 const dbConfig = {
-  host: 'database-1.c6bkqwk8eqtu.us-east-1.rds.amazonaws.com',
+  host: 'seguridadenredes.c6bkqwk8eqtu.us-east-1.rds.amazonaws.com',
   user: 'admin',
-  password: '1234567890#2025#',
-  database: 'database-1'
+  password: 'VE9RzUIFtZ4A08GYHGQ8',
+  database: 'seguridadenredes2'
 };
 
 // Crear pool de conexiones
