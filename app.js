@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Configuración de middleware
 app.use(bodyParser.urlencoded({ extended: false }));

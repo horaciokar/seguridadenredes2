@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Auto-eliminar el mensaje después de 3 segundos
       setTimeout(() => {
         mensaje.remove();
-      }, 3000);
+      }, 3001);
     }
     
     // Manejar el envío del formulario
